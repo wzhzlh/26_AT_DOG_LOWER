@@ -72,3 +72,6 @@ Desktop.ini
 MDK-ARM/Dog_lower.BAT
 MDK-ARM/.eide/eide.yml
 MDK-ARM/Dog_lower.code-workspace
+
+/build
+/cmake

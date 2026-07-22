@@ -2,7 +2,7 @@
 #define __MOTOREX_H__
 
 #include "motor.h"
-#include "pid_old.h"
+#include "PID_old.h"
 
 typedef struct
 {
