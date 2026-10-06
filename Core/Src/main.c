@@ -73,6 +73,12 @@ void MX_FREERTOS_Init(void);
   * @brief  The application entry point.
   * @retval int
   */
+//  MPU_Config()划分 4 块内存区域
+// Region0：DTCM‑RAM (0x30000000,128KB) → 非缓存，双重保险 TCM 访问
+// Region1：全部外设空间0x40000000‑0x5FFFFFFF → 强序、非缓存、禁止执行指令
+// Region2：SRAM2（DMA 电机 RS485 缓冲区） → 非缓存 NOT_CACHEABLE，专门存放 DMA 收发缓冲区
+// Region3：AXI‑SRAM + Flash → 允许 I‑Cache/D‑Cache 开启缓存加速
+// main 开头：SCB_EnableICache(); SCB_EnableDCache();打开全局缓存总开关
 int main(void)
 {
 
