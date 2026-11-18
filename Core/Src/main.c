@@ -230,11 +230,11 @@ void PeriphCommonClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
-extern uint32_t bad_Motor;
-extern uint32_t reset_uart_front;
-extern uint32_t reset_uart_back;
+extern volatile uint32_t bad_Motor;
+extern volatile uint32_t reset_uart_front;
+extern volatile uint32_t reset_uart_back;
 extern MotorStatePack_t legs_state;
-uint8_t tim_reset[12] = {0};
+uint8_t tim_reset[16] = {0};
 /* USER CODE END 4 */
 
  /* MPU Configuration */
@@ -280,16 +280,17 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
   if(htim->Instance==TIM13)
 		{
 	    uint32_t watch_dog_mask = 0;
-	    for (int i = 0; i < 12; i++)
+	    uint32_t bad_motor_snapshot = bad_Motor;
+	    for (int i = 0; i < 16; i++)
 	    {
 	      uint32_t motor_mask = 0x0001 << i;
-	      if (bad_Motor & motor_mask)
+	      if (bad_motor_snapshot & motor_mask)
 	      {
 	        if (tim_reset[i] < 255) tim_reset[i]++;
 	        if (tim_reset[i] > 30 && tim_reset[i] < 80)
 	        {
-	          if (motor_mask & 0x003F) reset_uart_front = 1;
-	          if (motor_mask & 0x0FC0) reset_uart_back = 1;
+	          if (motor_mask & 0x00FF) reset_uart_front = 1;
+	          if (motor_mask & 0xFF00) reset_uart_back = 1;
 	        }
 	        else if (tim_reset[i] > 80) watch_dog_mask |= motor_mask;
 	      }

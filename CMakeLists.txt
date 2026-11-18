@@ -44,12 +44,32 @@ target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
 
 # Add sources to executable
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE
-    # Add user sources here
+    # MyLib sources
+    MyLib/485_bus.c
+    MyLib/bezier.c
+    MyLib/crc_ccitt.c
+    MyLib/dm_h6215.c
+    MyLib/FDCANDriver.c
+    MyLib/go_motor.c
+    MyLib/JY61.c
+    MyLib/kalman.c
+    MyLib/motor.c
+    MyLib/motorEx.c
+    MyLib/mylist.c
+    MyLib/PID_old.c
+    MyLib/usb_trans.c
+    MyLib/WatchDog2.c
+    # MyTask sources
+    MyTask/app_main.c
+    MyTask/run.c
+    MyTask/ws2812.c
 )
 
 # Add include paths
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined include paths
+    MyLib
+    MyTask
 )
 
 # Add project symbols (macros)
