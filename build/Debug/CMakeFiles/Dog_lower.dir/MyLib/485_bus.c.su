@@ -1,5 +1,0 @@
-/home/zhangjiayi/RL/26_AT_DOG_LOWER/MyLib/485_bus.c:3:6:RS485Init	24	static
-/home/zhangjiayi/RL/26_AT_DOG_LOWER/MyLib/485_bus.c:16:10:RS485Send	24	static
-/home/zhangjiayi/RL/26_AT_DOG_LOWER/MyLib/485_bus.c:26:10:RS485Recv	32	static
-/home/zhangjiayi/RL/26_AT_DOG_LOWER/MyLib/485_bus.c:43:10:RS485SendIRQ_Handler	24	static
-/home/zhangjiayi/RL/26_AT_DOG_LOWER/MyLib/485_bus.c:58:10:RS485RecvIRQ_Handler	32	static

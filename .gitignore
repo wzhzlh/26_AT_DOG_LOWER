@@ -25,6 +25,9 @@
 *.crf
 *.o
 *.d
+*.su
+*.bin
+*.out
 *.iex
 *.uvgui.*
 *.uvguix.*
@@ -37,6 +40,7 @@
 *.tmp
 *.ini
 *.ld
+!STM32H723xG_flash.ld
 *.__i
 *._i
 
@@ -83,3 +87,5 @@ CTestTestfile.cmake
 Testing/
 install_manifest.txt
 CMakeUserPresets.json
+.ninja_deps
+.ninja_log

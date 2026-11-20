@@ -1,4 +1,0 @@
-/home/zhangjiayi/RL/26_AT_DOG_LOWER/MyLib/go_motor.c:4:10:GoMotorSend	32	static
-/home/zhangjiayi/RL/26_AT_DOG_LOWER/MyLib/go_motor.c:18:10:GoMotorRecv	48	static
-/home/zhangjiayi/RL/26_AT_DOG_LOWER/MyLib/go_motor.c:38:17:list_match_cb	24	static
-/home/zhangjiayi/RL/26_AT_DOG_LOWER/MyLib/go_motor.c:46:9:GoMotorRecv_AutoMatch	56	static

@@ -1,3 +1,0 @@
-/home/zhangjiayi/RL/26_AT_DOG_LOWER/Core/Src/spi.c:30:6:MX_SPI6_Init	8	static
-/home/zhangjiayi/RL/26_AT_DOG_LOWER/Core/Src/spi.c:72:6:HAL_SPI_MspInit	232	static
-/home/zhangjiayi/RL/26_AT_DOG_LOWER/Core/Src/spi.c:116:6:HAL_SPI_MspDeInit	16	static

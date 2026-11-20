@@ -1,7 +1,0 @@
-/home/zhangjiayi/RL/26_AT_DOG_LOWER/MyLib/WatchDog2.c:8:17:match	16	static
-/home/zhangjiayi/RL/26_AT_DOG_LOWER/MyLib/WatchDog2.c:15:13:WatchDogTask	40	static
-/home/zhangjiayi/RL/26_AT_DOG_LOWER/MyLib/WatchDog2.c:40:10:AddWatchDog	56	static
-/home/zhangjiayi/RL/26_AT_DOG_LOWER/MyLib/WatchDog2.c:59:10:FeedDog	24	static
-/home/zhangjiayi/RL/26_AT_DOG_LOWER/MyLib/WatchDog2.c:72:10:DisableDog	24	static
-/home/zhangjiayi/RL/26_AT_DOG_LOWER/MyLib/WatchDog2.c:83:10:EnableDog	24	static
-/home/zhangjiayi/RL/26_AT_DOG_LOWER/MyLib/WatchDog2.c:94:10:DeleteDog	16	static

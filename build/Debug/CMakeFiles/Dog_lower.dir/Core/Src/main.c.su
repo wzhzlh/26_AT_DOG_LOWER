@@ -1,6 +1,0 @@
-/home/zhangjiayi/RL/26_AT_DOG_LOWER/Core/Src/main.c:76:5:main	24	static
-/home/zhangjiayi/RL/26_AT_DOG_LOWER/Core/Src/main.c:152:6:SystemClock_Config	120	static
-/home/zhangjiayi/RL/26_AT_DOG_LOWER/Core/Src/main.c:210:6:PeriphCommonClock_Config	192	static
-/home/zhangjiayi/RL/26_AT_DOG_LOWER/Core/Src/main.c:242:6:MPU_Config	24	static
-/home/zhangjiayi/RL/26_AT_DOG_LOWER/Core/Src/main.c:277:6:HAL_TIM_PeriodElapsedCallback	32	static
-/home/zhangjiayi/RL/26_AT_DOG_LOWER/Core/Src/main.c:317:6:Error_Handler	4	static

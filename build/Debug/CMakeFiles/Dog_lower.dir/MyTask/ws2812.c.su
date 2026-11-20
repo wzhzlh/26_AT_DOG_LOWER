@@ -1,3 +1,0 @@
-/home/zhangjiayi/RL/26_AT_DOG_LOWER/MyTask/ws2812.c:11:6:WS2812_Ctrl	56	static
-/home/zhangjiayi/RL/26_AT_DOG_LOWER/MyTask/ws2812.c:33:6:WS2812_Init	8	static
-/home/zhangjiayi/RL/26_AT_DOG_LOWER/MyTask/ws2812.c:39:6:WS2812_SPI_Send_IRQ	16	static
